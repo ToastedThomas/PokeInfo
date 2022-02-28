@@ -1,0 +1,195 @@
+.canvas {
+  background-color: #80b070;
+}
+.title {
+  width: auto;
+  text-align: center;
+  margin: 0px auto;
+}
+.container {
+  display: flex;
+  font-family: 'Helvetica';
+  justify-content: safe;
+  flex-wrap: wrap;
+  width: 82%;
+  margin: 0px auto;
+}
+.infoBox {
+  background-color: #e9eceb;
+  border-radius: 15px 30px;
+  box-shadow: 5px 5px 5px #506262;
+  text-align: center;
+  height: 250px;
+  width: 175px;
+  margin: 20px;
+  transition: width 0.3s, height 0.3s;
+}
+.infoBox:hover {
+  height: 300px;
+  width: 200px;
+}
+.pokeSprite {
+  width: auto;
+  display: block;
+  margin: 10px auto;
+  filter: drop-shadow(2px 2px 2px #506262);
+}
+.infoBox p:first-letter {
+  text-transform: capitalize;
+}
+#typeBox {
+  display: flex;
+  justify-content: space-around;
+  background-color: #cbd0d4;
+  border-radius: 20px;
+  width: 50%;
+  padding: 3px 10px;
+  margin: 0px auto;
+}
+#typeBox p {
+  margin: 7px 0px 0px 0px;
+}
+.nameBox {
+  display: flex;
+  justify-content: space-between;
+  background-color: #cbd0d4;
+  border-radius: 20px;
+  width: 20%;
+  padding: 0px 10px;
+  margin: 0px 10px 0px auto;
+}
+.idBox {
+  display: flex;
+  justify-content: space-between;
+  background-color: #cbd0d4;
+  border-radius: 20px;
+  width: 20%;
+  padding: 0px 10px;
+  margin: 5px 10px 5px auto;
+}
+#heightBox {
+  display: flex;
+  justify-content: space-between;
+  background-color: #cbd0d4;
+  border-radius: 20px;
+  width: 20%;
+  padding: 0px 10px;
+  margin: 0px 10px 5px auto;
+}
+#weightBox {
+  display: flex;
+  justify-content: space-between;
+  background-color: #cbd0d4;
+  border-radius: 20px;
+  width: 20%;
+  padding: 0px 10px;
+  margin: 0px 10px 5px auto;
+}
+#abilityBox {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flexbox;
+  justify-content: space-between;
+  background-color: #cbd0d4;
+  border-radius: 20px;
+  padding: 10px;
+  width: 25%;
+}
+#abilityBox h5 {
+  display: block;
+  margin: 0px auto;
+  width: 100%;
+}
+#abilityBox h6 {
+  margin: 0px auto;
+  width: auto;
+}
+#abilityBox p {
+  display: inline-block;
+  vertical-align:top;
+  padding: 0px 25px;
+}
+#abilityBox p:first-letter {
+  text-transform: capitalize;
+}
+#statsBox {
+  position: absolute;
+  top: 10px;
+  left: 29%;
+  display: flexbox;
+  justify-content: space-between;
+  background-color: #cbd0d4;
+  border-radius: 20px;
+  width: 35%;
+}
+.smallStatBox {
+  display: inline-block;
+  background-color: #506262;
+  border-radius: 10px;
+  width: 14%;
+  margin: 5px 3px;
+}
+.smallStatBox p {
+  color: #ebede9;
+  display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+#hp {
+  background-color: #a53030;
+}
+#attack {
+  background-color: #be772b;
+}
+#defense {
+  background-color: #75a743;
+}
+#special-attack {
+  background-color: #884b2b;
+}
+#special-defense {
+  background-color: #468232;
+}
+#speed {
+  background-color: #4f8fba;
+}
+.typeIcon {
+  height: 32px;
+  width: 32px;
+  filter: drop-shadow(2px 2px 2px #506262);
+}
+.expandedBox {
+  pointer-events: none;
+  position: relative;
+  background-color: #e9eceb;
+  border-radius: 15px 30px;
+  box-shadow: 5px 5px 5px #506262;
+  text-align: center;
+  height: 600px;
+  width: 90%;
+  margin: 20px;
+  transition: width 0.3s, height 0.3s;
+}
+.bigPokeSprite {
+  width: 256px;
+  display: block;
+  margin: 0px 0px 0px auto;
+  filter: drop-shadow(2px 2px 2px #506262);
+}
+
+.expandedBox p:first-letter {
+  text-transform: capitalize;
+}
+.closeButton {
+  pointer-events: all;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  width: 32px;
+  height: 32px;
+}
