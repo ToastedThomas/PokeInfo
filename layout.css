@@ -1,4 +1,4 @@
-p, label {
+p,  label {
   margin-block-start: 0;
   margin-block-end: 0;
   padding: 5px;
@@ -6,6 +6,20 @@ p, label {
 select {
   margin: 5px;
 }
+audio {
+  background-color: #c2c2c2;
+  border-radius: 5px;
+}
+audio::-webkit-media-controls-panel {
+  background-color: #c2c2c2;
+}
+hr {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  border-style: inset;
+  
+}
+
 .canvas {
   background-color: #242424;
   color: #b1b1b1;
@@ -15,10 +29,36 @@ select {
   text-align: center;
   margin: 0px auto;
 }
+
+.paginationContainer {
+  margin: 20px auto;
+  width: fit-content;
+}
+.paginationContainer > button {
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 3px 6px;
+  margin: 0 2px;
+}
+.paginationContainer > button:hover {
+  background-color: #c2c2c2;
+}
+.active {
+  background-color: #858585;
+}
+.paginationContainer > button:disabled {
+  opacity: 1;
+  pointer-events: none;
+  background-color: #858585;
+  color: buttontext;
+  border: 2px outset buttonborder;
+}
+
 .container {
   display: flex;
   font-family: 'Helvetica';
-  justify-content: safe;
+  justify-content: center;
   flex-wrap: wrap;
   width: 82%;
   margin: 0px auto;
@@ -90,7 +130,7 @@ select {
   margin: 15px auto;
 }
 
-.closeBtn {
+#closeBtn {
   grid-row: 1;
   grid-column: 3;
   cursor: pointer;
@@ -112,6 +152,11 @@ select {
   border-radius: 5px;
   height: fit-content
 }
+.types {
+  grid-row: 1;
+  height: fit-content;
+  padding: 5px;
+}
 
 .baseExperience {
   grid-column: 2;
@@ -123,7 +168,7 @@ select {
   grid-column: 1;
   display: grid;
   grid-template-columns: max-content max-content;
-  grid-template-rows: max-content max-content;
+  grid-template-rows: max-content max-content max-content;
   gap: 10px;
 }
 .abilities > div {
@@ -133,9 +178,17 @@ select {
   width: fit-content;
   padding: 10px;
 }
+.abilities > h4 {
+  grid-column: 1 / span 2;
+}
 .hiddenAbility {
   font-weight: bolder;
   font-size: small;
+}
+.sectionTitle {
+  text-align: left;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .games {
@@ -148,6 +201,7 @@ select {
   scrollbar-color: #858585 #c2c2c2;
   scrollbar-width: thin;
   margin: auto 0 0 0;
+  padding: 10px;
 }
 
 .stats {
@@ -192,6 +246,7 @@ select {
   border-radius: 5px;
   scrollbar-color: #858585 #c2c2c2;
   scrollbar-width: thin;
+  padding: 10px;
 }
 
 .cries {
